@@ -12,12 +12,12 @@ class App extends Component {
       <BrowserRouter>
           <div>
             <Header/>
-            <div class="container content-holder">
-              <div class="row ">
-                <div class="col col-md-12">
+            <div className="container content-holder">
+              <div className="row ">
+                <div className="col col-md-12">
                   <Route exact path="/" component={Landing}/>
                   <Route path="/mymovies" component={MyMovies}/>
-                  <Route path="/movie/:imdbID" component={MyMovies}/>
+                  <Route path="/movie/:imdbID" component={Movie}/>
                 </div>
               </div>
             </div>
