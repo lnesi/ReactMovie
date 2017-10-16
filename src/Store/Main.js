@@ -8,17 +8,18 @@ const initialState={
 	currentMovie:null,
 	favorites:[],
 	error:null,
-  showFeedback:true
+  showFeedback:true,
+  totalResults:0
 };
 
 function reducer(state=initialState,action){
   switch (action.type) {
    	case 'FETCH_SEARCH_PENDING':{
 
-   		return {...state,searchResult:[],loading:true}
+   		return {...state,searchResult:[],loading:true,totalResults:0}
    	}
    	case 'FETCH_SEARCH_FULFILLED':{
-   		return {...state,searchResult:action.payload.data.Search,loading:false}
+   		return {...state,searchResult:action.payload.data.Search,loading:false,totalResults:parseInt(action.payload.data.totalResults)}
    	}
     case 'FETCH_MOVIE_PENDING':{
       return {...state,currentMovie:[],loading:true}

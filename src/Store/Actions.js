@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-export function goSearch(query){
+export function goSearch(query,page=1){
 	console.log("goSearch",window.location.protocol);
-	return {type:"FETCH_SEARCH",payload:axios.get(window.location.protocol+"//www.omdbapi.com/?s="+encodeURI(query)+"&apikey=BanMePlz")}; 
+	return {type:"FETCH_SEARCH",payload:axios.get(window.location.protocol+"//www.omdbapi.com/?s="+encodeURI(query)+"&apikey=BanMePlz&page="+page)}; 
 	//return {type:'FETCH_SEARCH',payload:axios.get("/data/search.json?s="+query)};
 }
 

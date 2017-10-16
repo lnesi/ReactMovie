@@ -49,41 +49,41 @@ class Movie extends Component{
 		return(
 			<div>
 				<AddedFeedback show={this.state.showFeedback}/>
-				<div class="movie row">
-					<div class="col col-sm-4">
+				<div className="movie row">
+					<div className="col col-sm-4">
 
-						<img src={movie.Poster} alt="{movie.Title}"/>
+						<img src={movie.Poster} alt={movie.Title} />
 					</div>
-					<div class="col col-sm-8">
+					<div className="col col-sm-8">
 						<h1>{movie.Title}</h1>
-						<p class="h6">Rated: {movie.Rated}</p>
+						<p className="h6">Rated: {movie.Rated}</p>
 						<p>{movie.Plot}</p>
-						<footer class="blockquote-footer">{movie.Genre}</footer>
+						<footer className="blockquote-footer">{movie.Genre}</footer>
 						<hr/>
-						<dl class="row">
-						  <dt class="col-sm-3">Language</dt>
-						  <dd class="col-sm-3">{movie.Language}</dd>
-						  <dt class="col-sm-3">Runtime</dt>
-						  <dd class="col-sm-3">{movie.Runtime}</dd>
-						  <dt class="col-sm-3">Director</dt>
-						  <dd class="col-sm-3">{movie.Director}</dd>
-						  <dt class="col-sm-3">Year</dt>
-						  <dd class="col-sm-3">{movie.Year}</dd>
-						  <dt class="col-sm-3">Country</dt>
-						  <dd class="col-sm-3">{movie.Country}</dd>
-						  <dt class="col-sm-3">Released</dt>
-						  <dd class="col-sm-3">{movie.Released}</dd>
-						  <dt class="col-sm-3">Actors</dt>
-						  <dd class="col-sm-9">{movie.Actors}</dd>
+						<dl className="row">
+						  <dt className="col-sm-3">Language</dt>
+						  <dd className="col-sm-3">{movie.Language}</dd>
+						  <dt className="col-sm-3">Runtime</dt>
+						  <dd className="col-sm-3">{movie.Runtime}</dd>
+						  <dt className="col-sm-3">Director</dt>
+						  <dd className="col-sm-3">{movie.Director}</dd>
+						  <dt className="col-sm-3">Year</dt>
+						  <dd className="col-sm-3">{movie.Year}</dd>
+						  <dt className="col-sm-3">Country</dt>
+						  <dd className="col-sm-3">{movie.Country}</dd>
+						  <dt className="col-sm-3">Released</dt>
+						  <dd className="col-sm-3">{movie.Released}</dd>
+						  <dt className="col-sm-3">Actors</dt>
+						  <dd className="col-sm-9">{movie.Actors}</dd>
 						 </dl>
 						 <hr/>
-						 <dl class="row">
-						  <dt class="col-sm-3">Awards</dt>
-						  <dd class="col-sm-9">{movie.Awards}</dd>
-						  <dt class="col-sm-3">imdb Rating</dt>
-						  <dd class="col-sm-3">{movie.imdbRating}</dd>
-						  <dt class="col-sm-3">imdb Votes</dt>
-						  <dd class="col-sm-3">{movie.imdbVotes}</dd>
+						 <dl className="row">
+						  <dt className="col-sm-3">Awards</dt>
+						  <dd className="col-sm-9">{movie.Awards}</dd>
+						  <dt className="col-sm-3">imdb Rating</dt>
+						  <dd className="col-sm-3">{movie.imdbRating}</dd>
+						  <dt className="col-sm-3">imdb Votes</dt>
+						  <dd className="col-sm-3">{movie.imdbVotes}</dd>
 						</dl>
 						<h5>Ratings:</h5>
 						<ul>
@@ -92,10 +92,10 @@ class Movie extends Component{
 					</div>
 					
 				</div>
-				<div class="row">
-					<div class="col-sm-12">
-					<button onClick={this.goBack} className="btn btn-dark"><i class="fa fa-fw fa-chevron-circle-left"></i> Back</button>
-					<button onClick={this.addMovie.bind(this)} className="btn btn-primary pull-right"><i class="fa fa-fw fa-plus"></i> Add to My Movies</button>
+				<div className="row">
+					<div className="col-sm-12">
+					<button onClick={this.goBack} className="btn btn-dark"><i className="fa fa-fw fa-chevron-circle-left"></i> Back</button>
+					<button onClick={this.addMovie.bind(this)} className="btn btn-primary pull-right"><i className="fa fa-fw fa-plus"></i> Add to My Movies</button>
 					</div>
 				</div>
 			</div>
