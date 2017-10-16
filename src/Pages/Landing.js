@@ -56,11 +56,11 @@ class Landing extends Component{
 		}
 		let pagination=null;
 		console.log("totalResults",this.props.totalResults);
-		if(this.props.totalResults!=0 && !isNaN(this.props.totalResults)){
+		if(this.props.totalResults!==0 && !isNaN(this.props.totalResults)){
 			let classPrev='page-item';
 			let classNext='page-item';
-			if(this.state.currentPage==1) classPrev+=" disabled"
-			if(this.state.currentPage==Math.ceil(this.props.totalResults/10)) classNext+=" disabled"
+			if(this.state.currentPage===1) classPrev+=" disabled"
+			if(this.state.currentPage===Math.ceil(this.props.totalResults/10)) classNext+=" disabled"
 			pagination=(<nav className="App-pagination">
 								  <ul className="pagination">
 								    <li className={classPrev}>

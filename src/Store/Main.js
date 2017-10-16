@@ -19,7 +19,8 @@ function reducer(state=initialState,action){
    		return {...state,searchResult:[],loading:true,totalResults:0}
    	}
    	case 'FETCH_SEARCH_FULFILLED':{
-   		return {...state,searchResult:action.payload.data.Search,loading:false,totalResults:parseInt(action.payload.data.totalResults)}
+
+   		return {...state,searchResult:action.payload.data.Search,loading:false,totalResults:parseInt(action.payload.data.totalResults,10)}
    	}
     case 'FETCH_MOVIE_PENDING':{
       return {...state,currentMovie:[],loading:true}
