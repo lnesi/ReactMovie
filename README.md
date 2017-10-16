@@ -31,3 +31,8 @@ As a user, I would like to be able to:
 - Movie director and actors.
 - Movie poster.
 - Any other relevant information that would add to the application.
+
+There is no requirement for the state to be persistent after a page refresh (i.e. we do not expect the data to survive a page refresh).
+
+The Open Movie Database API documentation can be found here:
+http://www.omdbapi.com/
